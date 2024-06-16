@@ -1,5 +1,7 @@
 import React from 'react';
-import { Screens, getScreenIcon } from '@routes/types';
+import { Screens } from '@routes/types';
+import { getScreenIcon } from '@routes/screens';
+
 import * as S from './TabBarIcon.styles'
 
 interface ITabBarIconProps {
@@ -7,8 +9,9 @@ interface ITabBarIconProps {
   color: string;
   size: number
   focused: boolean
-
 }
+
+
 
 export const TabBarIcon: React.FC<ITabBarIconProps> = ({ name, color, size, focused }) => {
   const Icon = getScreenIcon(name)

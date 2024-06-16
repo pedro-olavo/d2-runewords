@@ -3,7 +3,6 @@ import { useTheme } from "styled-components/native";
 import { ListRunes, OwnedRunes } from "@screens";
 import { Screens } from "./types";
 import { TabBarIcon } from "@components";
-import { TouchableOpacity } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
@@ -28,6 +27,7 @@ export function AppRoutesStack() {
           backgroundColor: colors["surface-01"],
           height: 75,
         },
+        tabBarTestID: `tab-bar-icon-container-${route.name}`
       })}>
       <Tab.Screen name={Screens.ListRunes} component={ListRunes} />
       <Tab.Screen name={Screens.OwnedRunes} component={OwnedRunes} />
