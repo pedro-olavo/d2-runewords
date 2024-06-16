@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/exocet-blizzard-heavy.ttf",
+      "sha1": "08a9ae5b6bcb699793225b7704d087ae8c2316cf"
+    },
+    {
+      "path": "src/assets/fonts/exocet-blizzard-light.ttf",
+      "sha1": "a3d56b89a089f57ff2dd9c2b8e659f14b78f0e47"
+    },
+    {
+      "path": "src/assets/fonts/exocet-blizzard-medium.ttf",
+      "sha1": "c292e29dbc37be910bf321d127aba156f1b6430f"
+    }
+  ]
+}

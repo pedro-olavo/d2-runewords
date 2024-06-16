@@ -87,9 +87,12 @@ export type BorderWidthsNameTheme =
   | 'stroke-02'
   | 'stroke-03';
 
+export type FontFamilyNamesTheme = 'light' | 'regular' | 'bold';
+
 export type IconSizeTheme = Record<IconsNameTheme, string>;
 export type ColorTheme = Record<ColorsNameTheme, string>;
 export type FontSizeTheme = Record<FontsNameTheme, string>;
+export type FontFamilyTheme = Record<FontFamilyNamesTheme, string>;
 export type LineHeightsTheme = Record<FontsNameTheme, string>;
 export type SpaceTheme = Record<SpaceNameTheme, string>;
 export type RadiiTheme = Record<RadiiNameTheme, string>;
@@ -98,6 +101,7 @@ export type BorderWidthsTheme = Record<BorderWidthsNameTheme, string>;
 export interface Theme {
   colors: ColorTheme;
   fontSizes: FontSizeTheme;
+  fontFamily: FontFamilyTheme;
   iconSizes: IconSizeTheme;
   lineHeights: LineHeightsTheme;
   space: SpaceTheme;

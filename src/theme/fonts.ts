@@ -1,6 +1,17 @@
-import { FontSizeTheme, IconSizeTheme, LineHeightsTheme } from "./types";
+import {
+  FontFamilyTheme,
+  FontSizeTheme,
+  IconSizeTheme,
+  LineHeightsTheme,
+} from './types';
 
-export const fontSizes : FontSizeTheme = {
+export const fontFamily: FontFamilyTheme = {
+  light: 'exocet-blizzard-light',
+  regular: 'exocet-blizzard-medium',
+  bold: 'exocet-blizzard-heavy',
+};
+
+export const fontSizes: FontSizeTheme = {
   'display-01': '48px',
   'display-02': '40px',
   'display-03': '32px',
@@ -16,9 +27,9 @@ export const fontSizes : FontSizeTheme = {
   'caption-01': '13px',
   'caption-02': '11px',
   'caption-03': '8px',
-}
+};
 
-export const lineHeights : LineHeightsTheme = {
+export const lineHeights: LineHeightsTheme = {
   'display-01': '48px',
   'display-02': '48px',
   'display-03': '40px',
@@ -34,9 +45,9 @@ export const lineHeights : LineHeightsTheme = {
   'caption-01': '16px',
   'caption-02': '16px',
   'caption-03': '16px',
-}
+};
 
-export const iconSizes : IconSizeTheme = {
+export const iconSizes: IconSizeTheme = {
   'iconDisplay-01': '40px',
   'iconDisplay-02': '32px',
   'iconTitle-01': '28px',
