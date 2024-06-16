@@ -12,16 +12,14 @@ describe('TabBarIcon Tests', () => {
   });
 
   it('should render ListRunes TabBarIcon', async () => {
-    // Wait for the ListRunes TabBarIcon to be visible
     await expect(
-      element(by.id(`tab-bar-icon-container-${Screens.ListRunes}`)),
+      element(by.id(`TAB-ICON-CONTAINER-${Screens.ListRunes}-BTN`)),
     ).toBeVisible();
   });
 
   it('should render OwnedRunes TabBarIcon', async () => {
-    // Wait for the ListRunes TabBarIcon to be visible
     await expect(
-      element(by.id(`tab-bar-icon-container-${Screens.OwnedRunes}`)),
+      element(by.id(`TAB-ICON-CONTAINER-${Screens.OwnedRunes}-BTN`)),
     ).toBeVisible();
   });
 });

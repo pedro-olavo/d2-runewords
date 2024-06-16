@@ -27,7 +27,7 @@ export function AppRoutesStack() {
           backgroundColor: colors["surface-01"],
           height: 75,
         },
-        tabBarTestID: `tab-bar-icon-container-${route.name}`
+        tabBarTestID: `TAB-ICON-CONTAINER-${route.name}-BTN`
       })}>
       <Tab.Screen name={Screens.ListRunes} component={ListRunes} />
       <Tab.Screen name={Screens.OwnedRunes} component={OwnedRunes} />
