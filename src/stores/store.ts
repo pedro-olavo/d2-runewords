@@ -10,18 +10,18 @@ import {
   REHYDRATE,
 } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import runesReducer from './slices/runes';
 import runewordsReducer from './slices/runewords';
-import userRunesReducer from './slices/runes';
 
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['userRunes'],
+  whitelist: ['runes'],
 };
 
 const rootReducer = combineReducers({
+  runes: runesReducer,
   runewords: runewordsReducer,
-  userRunes: userRunesReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
