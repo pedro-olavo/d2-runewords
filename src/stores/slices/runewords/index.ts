@@ -1,20 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-interface Runeword {
-  id: string;
-  name: string;
-}
-
+import { IRunewords } from '../types';
+import runewords from './runewords';
 interface RunewordsState {
-  runewords: Runeword[];
+  runewords: IRunewords[];
 }
 
 const initialState: RunewordsState = {
-  runewords: [
-    { id: '1', name: "Ancient's Pledge" },
-    { id: '2', name: 'Black' },
-    { id: '3', name: 'Fury' },
-  ],
+  runewords,
 };
 
 const runewordsSlice = createSlice({
