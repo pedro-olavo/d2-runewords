@@ -17,7 +17,10 @@ export const OwnedRunes: React.FC = () => {
           </S.ListHeaderContainer>
         }
         renderItem={({ item }) => (
-          <S.RuneContainer selected={item.owned} onPress={() => toggleRuneOwnership(item.name)}>
+          <S.RuneContainer
+            selected={item.owned}
+            onPress={() => toggleRuneOwnership(item.name)}
+            testID={`${item.name.toUpperCase()}-RUNE-BTN`}>
             <S.RuneImage source={item.image} />
             <S.RuneTitleContainer>
               <Typography>{item.name}</Typography>
@@ -26,7 +29,7 @@ export const OwnedRunes: React.FC = () => {
         )}
         ItemSeparatorComponent={S.ListSeparator}
         numColumns={4}
-
+        testID='RUNES-FLATLIST'
       />
     </S.Container >
   );

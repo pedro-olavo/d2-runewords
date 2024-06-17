@@ -1,5 +1,3 @@
-// e2e/tabBarIcon.spec.js
-
 import { Screens } from '@routes/types';
 
 describe('TabBarIcon Tests', () => {

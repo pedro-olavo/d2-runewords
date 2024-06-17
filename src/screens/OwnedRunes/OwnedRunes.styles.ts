@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: ${({ theme }) => theme.colors['background-01']};
-  padding-horizontal: ${({ theme }) => theme.space['spacing-20']};
+  padding-horizontal: ${({ theme }) => theme.space['spacing-16']};
 `;
 
 export const RuneContainer = styled.TouchableOpacity<{ selected: boolean }>`
@@ -33,7 +33,7 @@ export const ListHeaderContainer = styled.View`
 `;
 
 export const RunesList = styled(FlatList).attrs<FlatListProps<Runes>>(() => ({
-  contentContainerStyle: { paddingVertical: 20 },
+  contentContainerStyle: { paddingVertical: 16 },
 }))`
   width: 100%;
   margin-top: ${({ theme }) => theme.space['spacing-12']};
