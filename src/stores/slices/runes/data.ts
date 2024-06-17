@@ -1,6 +1,6 @@
-import { Runes } from '../types';
+import { IRunes } from '../types';
 
-export const runes: Runes[] = [
+export const runes: IRunes[] = [
   {
     name: 'el',
     level: 11,

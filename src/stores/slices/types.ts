@@ -1,6 +1,6 @@
 import { ImageSourcePropType } from 'react-native';
 
-export interface Runes {
+export interface IRunes {
   name: string;
   level: number;
   image: ImageSourcePropType;

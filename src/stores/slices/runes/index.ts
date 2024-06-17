@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { runes } from './data';
 import { ImageSourcePropType } from 'react-native';
-import { Runes } from '../types';
+import { IRunes } from '../types';
 
 interface RunesState {
-  runes: Runes[];
+  runes: IRunes[];
 }
 
 const initialState: RunesState = {

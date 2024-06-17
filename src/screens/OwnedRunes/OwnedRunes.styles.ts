@@ -1,4 +1,4 @@
-import { Runes } from '@stores/slices/types';
+import { IRunes } from '@stores/slices/types';
 import { FlatList, FlatListProps } from 'react-native';
 import styled from 'styled-components/native';
 
@@ -32,7 +32,7 @@ export const ListHeaderContainer = styled.View`
   margin-bottom: ${({ theme }) => theme.space['spacing-16']};
 `;
 
-export const RunesList = styled(FlatList).attrs<FlatListProps<Runes>>(() => ({
+export const RunesList = styled(FlatList).attrs<FlatListProps<IRunes>>(() => ({
   contentContainerStyle: { paddingVertical: 16 },
 }))`
   width: 100%;
