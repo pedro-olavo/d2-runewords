@@ -18,7 +18,7 @@ export const TabBarIcon: React.FC<ITabBarIconProps> = ({ name, color, size, focu
 
   return (
     <S.IconWrapper focused={focused}>
-      <Icon color={color} size={size} style={{ margin: 'auto' }} />
+      <Icon color={color} size={size} />
     </S.IconWrapper>
   );
 }
