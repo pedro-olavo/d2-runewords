@@ -54,12 +54,14 @@ O **Diablo 2 Runewords** é uma aplicação móvel desenvolvida para ajudar joga
 ## Estrutura do Projeto
 
 - **/src**: Contém o código-fonte da aplicação.
+  - **/assets**: Recursos estáticos e imagens.
   - **/components**: Componentes reutilizáveis.
+  - **/contexts**: Configurações e provedores do Context API.
+  - **/hooks**: Hooks da aplicação.
   - **/screens**: Telas da aplicação.
-  - **/navigation**: Configurações de navegação.
-  - **/context**: Configurações e provedores do Context API.
-  - **/redux**: Configurações e stores do Redux.
-  - **/styles**: Estilos globais e temas.
+  - **/routes**: Configurações de navegação.
+  - **/stores**: Configurações e stores do Redux.
+  - **/theme**: Estilos globais e temas.
 
 ## Contribuições
 
