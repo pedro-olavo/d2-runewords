@@ -8,6 +8,7 @@ const Tab = createBottomTabNavigator();
 
 export function AppRoutesStack() {
   const { colors } = useTheme();
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -21,6 +22,7 @@ export function AppRoutesStack() {
         ),
         headerShown: false,
         tabBarShowLabel: false,
+        tabBarHideOnKeyboard: true,
         tabBarActiveTintColor: colors['primary-01'],
         tabBarStyle: {
           borderColor: colors['surface-01'],
