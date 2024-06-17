@@ -49,7 +49,8 @@ O **Diablo 2 Runewords** é uma aplicação móvel desenvolvida para ajudar joga
      ```sh
      yarn build:detox
      ```
-          ```sh
+
+   ```sh
      yarn test:detox
      ```
 
